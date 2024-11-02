@@ -97,8 +97,6 @@
                                 <p>Con Booti, conecta con tus usuarios y optimiza tus procesos de forma personalizada, adaptada a cualquier industria o contexto.</p>
                                 <div class="banner_btn">
                                     <a href="https://chat.booti.website"><i class="fas fa-cloud-download-alt"></i> Pruébalo gratis</a>
-                                    <a href="https://chat.booti.website"><i class="fas fa-clipboard-list"></i> Demostracion</a>
-                                    <span>No se requiere tarjeta de crédito *</span>
                                 </div>
                             </div>
                             
@@ -917,19 +915,60 @@
                 <div class="container">
                     <div class="s2-newslatter_content relative-position">
                         <div class="s2-newslatter_title  text-center saas2-headline pera-content">
-                            <h2>Subscribe now!</h2>
-                            <p>Get the latest update.</p>
+                            <h2>Subscribete ahora!</h2>
+                            <p>Contactanos</p>
+                            <p class="mb-4"><span id="successMessage" style="color: green; display: none;">Formulario enviado correctamente, le responderemos tan pronto como sea posible</span></p>
+                            <p class="mb-4"><span id="ErrorMessage" style="color: red; display: none;">Por favor, completa todos los campos del formulario</span></p>
                         </div>
                         <div class="s2-newslatter-form  relative-position">
-                            <form action="#">
-                                <input class="email" name="email" type="email" placeholder="Enter your email address">
-                                <div class="nws-button position-absolute text-capitalize">
-                                    <button class="hover-btn" type="submit" value="Submit"> Subscribe</button>
+                         
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Nombre">
+                                            <label for="name">tu nombre</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Correo">
+                                            <label for="email">Tu correo</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-floating">
+                                            <input type="phone" class="form-control" id="phone" placeholder="Celular">
+                                            <label for="phone">Tu celular</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-xl-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="project" placeholder="Proyecto">
+                                            <label for="project">Tu proyecto</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Asunto">
+                                            <label for="subject">Asunto</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Dejar el mensaje aqui" id="message" style="height: 160px"></textarea>
+                                            <label for="message">Mensaje</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="button" class="btn btn-primary w-100 py-3" onclick="enviarCorreo()">Enviar mensaje</button>
+                                    </div>
+                                    <br><br>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="newsletter_pattern_1"><img src="assets/img/saas-c/banner/nb.png" alt=""></div>
+                    <div class="newsletter_pattern_1"><img src="assets/img/custom/Login Phone.png" alt=""></div>
                     <div class="cloud_anim newsletter_pattern_2" style="background-image: url(https://old3.commonsupport.com/emu/wp-content/uploads/2021/02/cloud-2.png);"></div>
                     <div class="cloud_anim newsletter_pattern_3" style="background-image: url(https://old3.commonsupport.com/emu/wp-content/uploads/2021/02/cloud-5.png);"></div> 
                     <div class="newsletter_pattern_4 " style="background-image: url(assets/img/saas-c/banner/ns.png);"></div>
@@ -943,20 +982,17 @@
                             <div class="s2_footer_widget clearfix ul-li-block  saas2-headline">
                                 <div class="s2_footer_about">
                                     <div class="s2-footer_logo">
-                                        <img src="assets/img/saas-c/logo/f-logo.png" alt="">
+                                        <img src="assets/img/custom/Tu asistente virtual.png" alt="">
                                     </div>
                                     <div class="footer_about">
-                                        30 Commercial Road Fratton 
-                                        PORTSMOUTH Hampshire PO1 1AA 
-                                        UNITED KINGDOM
+                                       Guadalajara Jalisco
                                     </div>
-                                    <span>Open Hours: </span>
-                                    <p>Mon - Sat: 8 am - 5 pm,
-                                    Sunday: CLOSED</p>
+                                    <span>Contactanos</span>
+                                    <p>booticloud@gmail.com</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12">
+                        <!-- <div class="col-lg-4 col-md-12">
                             <div class="s2_footer_widget clearfix ul-li-block saas2-headline">
                                 <div class="s2_footer_menu">
                                     <h3 class="s2_widget_title">
@@ -996,16 +1032,62 @@
                                     <a href="#"><i class="dr-bg fab fa-dribbble"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </footer>
         <div class="s2-copyright text-center">2023
-	<meta name="keywords" content="	accountant, advertising, advisor, agency, broker, business, clean, consulting, creative, elementor, finance, insurance, marketing, modern, portfolio"> © All rights reserved by <a href="#">Themexriver</a></div>
+	<meta name="keywords" content="	accountant, advertising, advisor, agency, broker, business, clean, consulting, creative, elementor, finance, insurance, marketing, modern, portfolio"> © Todos los derechos reservados por <a href="#">booti</a></div>
     <!-- End of footer section 
         ============================================= -->
-
+        <script src="js/main.js"></script>
+        <script>
+            function enviarCorreo() {
+            var nombre = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var telefono = document.getElementById('phone').value;
+            var proyecto = document.getElementById('project').value;
+            var asunto = document.getElementById('subject').value;
+            var mensaje = document.getElementById('message').value;
+    
+            if (!nombre || !email || !telefono || !proyecto || !asunto || !mensaje) {
+                document.getElementById('ErrorMessage').style.display = 'block';
+                return;
+            } else{
+                document.getElementById('ErrorMessage').style.display = 'none';
+            }
+    
+            var formData = {
+                Nombre: nombre,
+                Email: email,
+                Telefono: telefono,
+                Proyecto: proyecto,
+                Asunto: asunto,
+                Mensaje: mensaje
+            };
+            fetch('https://chat.booti.website/api/Contacts/sendEmail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('successMessage').style.display = 'block';
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('phone').value = '';
+                document.getElementById('project').value = '';
+                document.getElementById('subject').value = '';
+                document.getElementById('message').value = '';
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+        </script>
         <!-- JS library -->
         <script src="assets/js/jquery.js"></script>
         <script src="assets/js/popper.min.js"></script>
